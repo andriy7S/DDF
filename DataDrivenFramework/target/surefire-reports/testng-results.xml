@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Click to see screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Tue_Dec_08_13_16_50_EST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Tue_Dec_08_13_16_50_EST_2020.jpg><img src=Tue_Dec_08_13_16_50_EST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Data Driven Basics" duration-ms="4428" started-at="2020-12-08T18:16:50Z" finished-at="2020-12-08T18:16:54Z">
+    <groups>
+    </groups>
+    <test name="Bank Manager Login Test" duration-ms="803" started-at="2020-12-08T18:16:50Z" finished-at="2020-12-08T18:16:50Z">
+      <class name="com.w2a.testcases.BankManagerLoginTest">
+        <test-method status="FAIL" signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@1c39680d]" name="loginAsBankManager" duration-ms="330" started-at="2020-12-08T13:16:50Z" finished-at="2020-12-08T13:16:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Forcefull fail.....]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Forcefull fail.....
+	at org.testng.Assert.fail(Assert.java:93)
+	at com.w2a.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Tue_Dec_08_13_16_50_EST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Tue_Dec_08_13_16_50_EST_2020.jpg><img src=Tue_Dec_08_13_16_50_EST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManager -->
+      </class> <!-- com.w2a.testcases.BankManagerLoginTest -->
+    </test> <!-- Bank Manager Login Test -->
+    <test name="Add Customer Test" duration-ms="3617" started-at="2020-12-08T18:16:50Z" finished-at="2020-12-08T18:16:54Z">
+      <class name="com.w2a.testcases.AddCustomerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.AddCustomerTest@2d9caaeb]" name="setUp" is-config="true" duration-ms="7745" started-at="2020-12-08T13:16:42Z" finished-at="2020-12-08T13:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@2d9caaeb]" name="addCustomer" duration-ms="3582" started-at="2020-12-08T13:16:50Z" data-provider="getData" finished-at="2020-12-08T13:16:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Roman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ponko]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[A2M36B]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer added successfully]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@2d9caaeb]" name="tearDown" is-config="true" duration-ms="750" started-at="2020-12-08T13:16:54Z" finished-at="2020-12-08T13:16:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.w2a.testcases.AddCustomerTest -->
+    </test> <!-- Add Customer Test -->
+  </suite> <!-- Data Driven Basics -->
+</testng-results>
