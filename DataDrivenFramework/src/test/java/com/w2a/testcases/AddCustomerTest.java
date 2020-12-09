@@ -8,41 +8,23 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.w2a.base.TestBase;
+import com.w2a.utilities.TestUtil;
 
 public class AddCustomerTest extends TestBase {
 
-	@Test(dataProvider = "getData")
-	public void addCustomer(String firstName, String lastName, String postCode, String alerttext)
+	@Test(dataProviderClass = TestUtil.class, dataProvider = "dp")
+	public void addCustomerTest(String firstName, String lastName, String postCode, String alerttext)
 			throws InterruptedException {
 
-		driver.findElement(By.cssSelector(OR.getProperty("addCustBtn"))).click();
-		driver.findElement(By.cssSelector(OR.getProperty("firstname"))).sendKeys(firstName);
-		driver.findElement(By.cssSelector(OR.getProperty("lastname"))).sendKeys(lastName);
-		driver.findElement(By.cssSelector(OR.getProperty("postcode"))).sendKeys(postCode);
-		driver.findElement(By.cssSelector(OR.getProperty("addbtn"))).click();
+		clickElement("addCustBtn_CSS");
+		typeIn("firstname_CSS", firstName);
+		typeIn("lastname_XPATH", lastName);
+		typeIn("postcode_CSS", postCode);
+		clickElement("addbtn_CSS");
 
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		Assert.assertTrue(alert.getText().contains(alerttext));
-		Thread.sleep(3000);
 		alert.accept();
-
-		
 	}
 
-	@DataProvider
-	public Object[][] getData() {
-
-		String sheetName = "AddCustomerTest";
-		int rows = excel.getRowCount(sheetName);
-		int cols = excel.getColumnCount(sheetName);
-
-		Object[][] data = new Object[rows - 1][cols];
-		for (int rowNum = 2; rowNum <= rows; rowNum++) { // 2
-			for (int colNum = 0; colNum < cols; colNum++) {
-				// data[0][0]
-				data[rowNum - 2][colNum] = excel.getCellData(sheetName, colNum, rowNum);
-			}
-		}
-		return data;
-	}
 }

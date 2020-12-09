@@ -18,6 +18,7 @@ import org.testng.annotations.*;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.utilities.ExcelReader;
 import com.w2a.utilities.ExtentManager;
 
@@ -96,7 +97,29 @@ public class TestBase {
 		}
 	}
 
-	public boolean isElementPresent(By by) {
+	public void clickElement(String locator) {
+		if (locator.endsWith("_CSS")) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
+		} else if (locator.endsWith("_XPATH")) {
+			driver.findElement(By.xpath(OR.getProperty(locator))).click();
+		} else if (locator.endsWith("_ID")) {
+			driver.findElement(By.id(OR.getProperty(locator))).click();
+		}
+		eTest.log(LogStatus.INFO, "Clicking on : " + locator);
+	}
+
+	public void typeIn(String locator, String value) {
+		if (locator.endsWith("_CSS")) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
+		} else if (locator.endsWith("_XPATH")) {
+			driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
+		} else if (locator.endsWith("_ID")) {
+			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
+		}
+		eTest.log(LogStatus.INFO, "Typing in : " + locator + " entered value as " + value);
+	}
+
+ 	public boolean isElementPresent(By by) {
 		try {
 			driver.findElement(by);
 			return true;
@@ -104,6 +127,7 @@ public class TestBase {
 			return false;
 		}
 	}
+	
 
 	@AfterSuite
 	public void tearDown() {

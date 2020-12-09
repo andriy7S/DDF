@@ -5,7 +5,7 @@
       <![CDATA[Click to see screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Tue_Dec_08_13_16_50_EST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Wed_Dec_09_12_15_51_EST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -14,15 +14,15 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Tue_Dec_08_13_16_50_EST_2020.jpg><img src=Tue_Dec_08_13_16_50_EST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Wed_Dec_09_12_15_51_EST_2020.jpg><img src=Wed_Dec_09_12_15_51_EST_2020.jpg height=200 width=200></img></a>]]>
     </line>
   </reporter-output>
-  <suite name="Data Driven Basics" duration-ms="4428" started-at="2020-12-08T18:16:50Z" finished-at="2020-12-08T18:16:54Z">
+  <suite name="Data Driven Basics" duration-ms="1428" started-at="2020-12-09T17:15:50Z" finished-at="2020-12-09T17:15:52Z">
     <groups>
     </groups>
-    <test name="Bank Manager Login Test" duration-ms="803" started-at="2020-12-08T18:16:50Z" finished-at="2020-12-08T18:16:50Z">
+    <test name="Bank Manager Login Test" duration-ms="808" started-at="2020-12-09T17:15:50Z" finished-at="2020-12-09T17:15:51Z">
       <class name="com.w2a.testcases.BankManagerLoginTest">
-        <test-method status="FAIL" signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@1c39680d]" name="loginAsBankManager" duration-ms="330" started-at="2020-12-08T13:16:50Z" finished-at="2020-12-08T13:16:50Z">
+        <test-method status="FAIL" signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@127a7a2e]" name="loginAsBankManager" duration-ms="340" started-at="2020-12-09T12:15:50Z" finished-at="2020-12-09T12:15:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Forcefull fail.....]]>
@@ -30,7 +30,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Forcefull fail.....
 	at org.testng.Assert.fail(Assert.java:93)
-	at com.w2a.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:25)
+	at com.w2a.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,7 +67,7 @@
               <![CDATA[Click to see screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Tue_Dec_08_13_16_50_EST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Wed_Dec_09_12_15_51_EST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -76,19 +76,19 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Tue_Dec_08_13_16_50_EST_2020.jpg><img src=Tue_Dec_08_13_16_50_EST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Wed_Dec_09_12_15_51_EST_2020.jpg><img src=Wed_Dec_09_12_15_51_EST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- com.w2a.testcases.BankManagerLoginTest -->
     </test> <!-- Bank Manager Login Test -->
-    <test name="Add Customer Test" duration-ms="3617" started-at="2020-12-08T18:16:50Z" finished-at="2020-12-08T18:16:54Z">
+    <test name="Add Customer Test" duration-ms="611" started-at="2020-12-09T17:15:51Z" finished-at="2020-12-09T17:15:52Z">
       <class name="com.w2a.testcases.AddCustomerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.AddCustomerTest@2d9caaeb]" name="setUp" is-config="true" duration-ms="7745" started-at="2020-12-08T13:16:42Z" finished-at="2020-12-08T13:16:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.AddCustomerTest@2a225dd7]" name="setUp" is-config="true" duration-ms="7920" started-at="2020-12-09T12:15:42Z" finished-at="2020-12-09T12:15:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@2d9caaeb]" name="addCustomer" duration-ms="3582" started-at="2020-12-08T13:16:50Z" data-provider="getData" finished-at="2020-12-08T13:16:54Z">
+        <test-method status="PASS" signature="addCustomerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@2a225dd7]" name="addCustomerTest" duration-ms="570" started-at="2020-12-09T12:15:51Z" data-provider="dp" finished-at="2020-12-09T12:15:52Z">
           <params>
             <param index="0">
               <value>
@@ -113,8 +113,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@2d9caaeb]" name="tearDown" is-config="true" duration-ms="750" started-at="2020-12-08T13:16:54Z" finished-at="2020-12-08T13:16:55Z">
+        </test-method> <!-- addCustomerTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@2a225dd7]" name="tearDown" is-config="true" duration-ms="766" started-at="2020-12-09T12:15:52Z" finished-at="2020-12-09T12:15:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

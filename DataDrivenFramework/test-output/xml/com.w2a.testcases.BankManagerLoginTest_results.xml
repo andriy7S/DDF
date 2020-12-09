@@ -4,15 +4,15 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="0.343">
+           time="0.341">
   <properties />
-            <testcase name="loginAsBankManager" time="0.343" classname="com.w2a.testcases.BankManagerLoginTest">
+            <testcase name="loginAsBankManager" time="0.341" classname="com.w2a.testcases.BankManagerLoginTest">
                 <failure type="java.lang.AssertionError"
-                  message="Forsefull fail....."
+                  message="Forcefull fail....."
               >
-<![CDATA[java.lang.AssertionError: Forsefull fail.....
+<![CDATA[java.lang.AssertionError: Forcefull fail.....
   org.testng.Assert.fail(Assert.java:93)
-  com.w2a.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:25)
+  com.w2a.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:23)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
